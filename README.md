@@ -1,2 +1,2 @@
-# 2470FinalProject
+# 2710FinalProject
 This is a final project for database management course in PITT
