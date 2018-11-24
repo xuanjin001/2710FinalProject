@@ -5,7 +5,6 @@ import { combineReducers, createStore } from 'redux';
 import cartReducer from './reducers/cart';
 import productsReducer from './reducers/products';
 import App from './App';
-import productsData from './data/products';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const rootReducer = combineReducers({
@@ -16,7 +15,7 @@ const rootReducer = combineReducers({
 let store = createStore(
     rootReducer,
     {
-        products: productsData // initial store values
+        // initial store values
     },
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // for debugging
 );

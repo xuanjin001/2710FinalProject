@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import ProductList from '../components/ProductList';
-import { getProducts } from '../reducers/products';
+import { getProducts, fetchProducts } from '../reducers/products';
 
 const mapStateToProps = (state, props) => {
     return {
@@ -8,4 +8,8 @@ const mapStateToProps = (state, props) => {
     }
 }
 
-export default connect(mapStateToProps)(ProductList);
+const mapDispatchToProps = {
+    fetchProducts: fetchProducts
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductList);
