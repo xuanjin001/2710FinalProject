@@ -1,6 +1,14 @@
+// actions
+const FETCH_PRODUCTS   = 'cart/FETCH';
+
 // reducer
-export default function products(state = []) {
-    return state; // nothing to do here, but we need products node in redux store
+export default function products(state = [], action = {}) {
+    switch (action.type) {
+        case FETCH_PRODUCTS:
+            return action.payload;
+        default:
+            return state;
+    }
 }
 
 // selectors
@@ -10,4 +18,12 @@ export function getProducts(state, props) {
 
 export function getProduct(state, props) {
     return state.products.find(item => item.id === props.id);
+}
+
+// action creators
+export function fetchProducts(payload) {
+    return {
+        type: FETCH_PRODUCTS,
+        payload: payload
+    }
 }

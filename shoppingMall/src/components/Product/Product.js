@@ -36,7 +36,7 @@ class Product extends Component {
 }
 
 Product.propTypes = {
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number,
     currency: PropTypes.string,
