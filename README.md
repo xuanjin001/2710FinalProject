@@ -7,3 +7,5 @@ Make sure you have Docker installed. Use following command to start the DB on po
 ```
 docker-compose -f mysql.yml up
 ```
+
+### At the moment, I don't have whole a lot of time to redo this project. In the end, I want to make this project to be a template, as it has the frontend/backend and the whole process. This would be a great example for anyone who wants to learn full-stack. 
